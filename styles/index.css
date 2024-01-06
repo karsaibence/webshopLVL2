@@ -1,0 +1,79 @@
+@import url(variables.css);
+@import url(nav.css);
+@import url(imgTextBox.css);
+@import url(imgAndRates.css);
+@import url(buttons.css);
+@import url(header.css);
+@import url(footer.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding-top: 1rem;
+}
+
+h6 {
+    font-size: large;
+    font-weight: 900;
+    display: inline;
+}
+
+nav {
+    margin-block: 1rem;
+    grid-area: n;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header {
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contentTitle {
+    grid-area: c;
+    text-align: center;
+}
+.contentTitle h3{
+    margin-block: 1rem;
+    font-size: x-large;
+}
+
+.imgTextBox {
+    grid-area: i;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.imgAndRates {
+    grid-area: i;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.grid {
+    grid-template-areas:
+        'n'
+        'h'
+        'c'
+        'i'
+        'c'
+        'i';
+        max-width: 1024px;
+        margin-inline: auto;
+}
+.contentTitle{
+    margin-block: 2rem;
+}
